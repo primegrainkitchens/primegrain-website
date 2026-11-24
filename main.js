@@ -31,7 +31,7 @@
     sections.forEach(function (s) { spy.observe(s); });
 
     // Gentle reveal on scroll
-    var revealEls = document.querySelectorAll('.section-head, .seg, .card, .step, .features li, .band-copy, .band-photo, .cta-inner');
+    var revealEls = document.querySelectorAll('.product, .coming, .why-list li, .section-head, .seg, .card, .step, .features li, .band-copy, .band-photo, .cta-inner');
     var rev = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add('in'); rev.unobserve(en.target); }

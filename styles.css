@@ -350,3 +350,46 @@ em { font-style: italic; }
   .card-chilli .card-photo, .card-brown .card-photo { width: 190px; height: 190px; right: -50px; top: 50%; transform: translateY(-50%); }
   .footer { grid-template-columns: 1fr; padding: 36px 24px; gap: 28px; }
 }
+
+/* ---------- we deliver ---------- */
+.section-deliver { padding-top: 40px; }
+.products { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 980px; margin: 0 auto; }
+.product { text-align: center; background: var(--white); border-radius: var(--radius); padding: 36px 36px 40px; box-shadow: 0 18px 40px rgba(29,26,23,.06); }
+.product-photo { margin: 0 auto 24px; width: 260px; aspect-ratio: 1; border-radius: 50%; overflow: hidden; border: 8px solid var(--tur); }
+.product:nth-child(2) .product-photo { border-color: var(--chilli); }
+.product-photo img { width: 100%; height: 100%; object-fit: cover; }
+.product-tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 6px 12px; border-radius: 100px; }
+.tag-green { background: rgba(30,123,75,.12); color: var(--green); }
+.product h3 { font-family: var(--serif); font-weight: 900; font-size: 34px; margin-top: 12px; }
+.product p { color: var(--muted); font-size: 16px; max-width: 360px; margin: 10px auto 0; }
+.coming { max-width: 980px; margin: 40px auto 0; border: 2px dashed #D9CFC0; border-radius: var(--radius); padding: 28px 32px; text-align: center; }
+.coming-label { font: 700 30px/1 var(--script); color: var(--chilli); }
+.coming-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 20px; }
+.coming-list li { display: flex; flex-direction: column; align-items: center; gap: 6px; background: var(--white); border-radius: 18px; padding: 18px 12px; font-family: var(--serif); font-weight: 700; font-size: 19px; }
+.coming-list .dot { width: 14px; height: 14px; }
+.coming-list small { font: 600 12px/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+/* ---------- why us ---------- */
+.section-why { padding-top: 20px; }
+.why-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 70px; align-items: center; }
+.why-photo { margin: 0; border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/5; box-shadow: 0 24px 50px rgba(29,26,23,.12); }
+.why-photo img { width: 100%; height: 100%; object-fit: cover; }
+.why-copy h2 { font-family: var(--serif); font-weight: 900; font-size: clamp(34px, 3.8vw, 50px); line-height: 1.1; letter-spacing: -0.015em; margin: 6px 0 30px; }
+.why-copy h2 em { color: var(--chilli); }
+.why-list { display: grid; gap: 26px; }
+.why-list li { display: flex; gap: 20px; }
+.why-num { flex: none; font: 900 30px/1 var(--serif); color: var(--tur); width: 48px; }
+.why-list h3 { font-family: var(--serif); font-weight: 700; font-size: 22px; line-height: 1.2; }
+.why-list p { color: var(--muted); font-size: 15px; margin-top: 6px; }
+
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: 1fr; gap: 40px; }
+  .why-photo { aspect-ratio: 16/10; }
+  .coming-list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .products { grid-template-columns: 1fr; gap: 24px; }
+  .product { padding: 28px 22px 32px; }
+  .product-photo { width: 220px; }
+  .coming { padding: 24px 18px; }
+}

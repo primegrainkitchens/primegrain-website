@@ -422,3 +422,5 @@ em { font-style: italic; }
 .coming-list { grid-template-columns: repeat(5, 1fr); }
 .coming-list li { font-size: 17px; }
 @media (max-width: 900px) { .coming-list { grid-template-columns: repeat(2, 1fr); } .coming-list li:last-child { grid-column: 1 / -1; } }
+.coming-list li { white-space: nowrap; font-size: 16px; padding: 18px 8px; }
+@media (max-width: 420px) { .coming-list li { font-size: 15px; } }

@@ -417,3 +417,8 @@ em { font-style: italic; }
   .seg h3 { font-size: 17px; }
   .seg p { font-size: 13px; }
 }
+
+/* coming soon: five items */
+.coming-list { grid-template-columns: repeat(5, 1fr); }
+.coming-list li { font-size: 17px; }
+@media (max-width: 900px) { .coming-list { grid-template-columns: repeat(2, 1fr); } .coming-list li:last-child { grid-column: 1 / -1; } }
